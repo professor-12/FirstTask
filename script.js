@@ -9,15 +9,17 @@ console.log(getTime)
 
 const hour = new Date().getUTCHours()
 const minute = new Date().getUTCMinutes()
-setInterval(()=> {
-    
-},1000)
 
-const CurrentTime = `${hour} : ${minute}`
+const SetTime = () => {
+    const CurrentTime = `${hour} : ${minute}`
+    document.getElementById('time').innerHTML =   CurrentTime
+    
+}
+
+
 const currentDate = (Weekday[date])
 
+document.getElementById('date').innerHTML =   currentDate;
 
-document.getElementById('time').innerHTML =   CurrentTime
-document.getElementById('date').innerHTML =   currentDate
-
+setInterval(SetTime, 100);
 
