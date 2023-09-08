@@ -8,7 +8,8 @@ const date = new Date().getDay();
 
 
 const Time = () => {
-    const getTime = new Date().toUTCString()
+    const getTime = new Date().getTime()
+    console.log(getTime)
 
     document.getElementById('getTime').textContent =   getTime
 }
