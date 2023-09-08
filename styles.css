@@ -1,9 +1,15 @@
 img {
     border-radius: 50%;
-    height: 20rem;
-    margin-top: 40px;
+    height: 15rem;
     object-fit: cover;
-    width: 20rem;
+    width: 15rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
 }
 
 
@@ -12,9 +18,48 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0rem  12px;
 
 }
 
 h1 {
     text-align: center;
+}
+
+
+p {
+    font-size: x-large;
+
+}
+
+nav {
+    width: 100%;
+    padding: 12px;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    background: blue;
+
+}
+
+.container {
+    box-shadow: 1px .1px 3px black;
+    padding: orem 4rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    width: 50%;
+    flex-direction: column;
+
+}
+
+
+
+@media (max-width:1000px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+        padding: 4rem;
+    }
 }

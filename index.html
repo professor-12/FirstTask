@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Task</title>
-    <link rel="stylesheet" href='styles.css'>
-</head>
-<body>
-    <h1 data-testid="slackUserName">Adewale</h1>
-    <img src="ProfileImage.jpg" alt="Adewale" data-testid="slackDisplayImage">
-    <p data-testid="currentDayOfTheWeek" id="date"></p>
-    <p id='getTime' data-testid="currentUTCTime"></p>
-    <p data-testid="myTrack">Frontend</p>
-    <a href="https://github.com/professor-12/FirstTask" data-testid="githubURL">GitHub Repository</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Task</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav>Welcome to my Dashboard</nav>
+        <div class="container">
+            <img
+                src="ProfileImage.jpg"
+                alt="Adewale"
+                data-testid="slackDisplayImage"
+            />
+            <br>
+            <br>
+            <div class="profile-details">
+                <div style="display: flex;align-items: center;">
+                    <h2 style="margin-right: 12px;">Slack Name:</h2>
+                    <h1 data-testid="slackUserName">Badejo Emmanuel</h1>
+                </div>
+                <br />
+                <div style="display: flex; align-items: center">
+                    <h2 style="margin-right: 6px">current Day Of TheWeek:</h2>
+                    <p data-testid="currentDayOfTheWeek" id="date"></p>
+                </div>
+                <br>
+                <div style="display: flex; align-items: center">
+                    <h2>current UTC Time: </h2>
+                    <p id="getTime" data-testid="currentUTCTime"></p>
+                </div>
+                <br>
+                <div  style="display: flex; align-items: center" >
+                    <h2 style="margin-right: 12px;">MY Track: </h2>                    
+                    <p data-testid="myTrack">Frontend</p>
+                </div>
+                <br>
+                <div style="display: flex; align-items:center ;">
+                    <h2 style="margin-right: 12px;">GitHub Repository: </h2>
+                    <a
+                        href="https://github.com/professor-12/Firs  tTask"
+                        data-testid="githubURL"
+                        >GitHub Repository</a
+                    >
+                </div>
+            </div>
+        </div>
 
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

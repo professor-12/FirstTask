@@ -1,23 +1,24 @@
+const date = new Date();
 const Weekday = [
     'Sunday','Monday','TuesDay','WednesDay','Thursday','Friday','Saturday'
 ]
-const date = new Date().getDay();
 
 
 
-
+const index = date.getDay()
+const currentDate = (Weekday[index])
+document.querySelector('#date').innerText =   currentDate;
 
 const Time = () => {
-    const getTime = new Date().getTime()
-    console.log(getTime)
-
+    const date = new Date() 
+    const getTime = date.getTime()
     document.getElementById('getTime').textContent =   getTime
 }
-    
-
-const currentDate = (Weekday[date])
-
-document.getElementById('date').innerHTML =   currentDate;
 
 
 setInterval(Time,1000)
+
+
+
+
+
