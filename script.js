@@ -1,24 +1,28 @@
+const currentDayText = document.querySelector("#currentDayOfTheWeek");
+const currentUTCTime = document.getElementById("currentUTCTime");
 const date = new Date();
-const Weekday = [
-    'Sunday','Monday','TuesDay','WednesDay','Thursday','Friday','Saturday'
-]
 
+const generateCurrentDate = () => {
+  const daysOfTheWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const dayIndex = date.getDay();
+  const currentDay = daysOfTheWeek[dayIndex];
+  currentDayText.innerText = currentDay;
+};
 
+const generateUTCTime = () => {
+  const date = new Date();
+  const utcTimeMilliseconds = date.getTime();
+  currentUTCTime.textContent = utcTimeMilliseconds;
+};
 
-const index = date.getDay()
-const currentDate = (Weekday[index])
-document.querySelector('#date').innerText =   currentDate;
-
-const Time = () => {
-    const date = new Date() 
-    const getTime = date.getTime()
-    document.getElementById('getTime').textContent =   getTime
-}
-
-
-setInterval(Time,1000)
-
-
-
-
-
+generateCurrentDate();
+generateUTCTime();
+setInterval(generateUTCTime, 1000);
